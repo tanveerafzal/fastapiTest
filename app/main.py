@@ -8,6 +8,6 @@ def root():
     return {"message": "Hello from FastAPI on Render!"}
 
 
-@router.get("/multiply")
+@app.get("/multiply")
 def multiply_route(a: int, b: int):
     return {"result": multiply(a, b)}
